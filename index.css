@@ -423,7 +423,6 @@ body {
 .slogan {
   top: -800px;
   position: relative;
-  right: -1300px;
   width: 300px;
   font-size: 120px;
   text-shadow: 1px 18px 35px #960000;
@@ -431,10 +430,39 @@ body {
 
 .trio_block {
   position: relative;
-  top: -400px;
+  top: -300px;
 }
 
 
 .trio_block > div > img {
   width: 40%;
+}
+
+
+@media (min-width: 0px) {
+  .slogan {
+    font-size: 60px;
+    right: -60%;
+    top: -400px;
+  }
+}
+@media (min-width: 768px) {
+  .slogan {
+    font-size: 60px;
+    right: -60%;
+    top: -300px;
+  }
+}
+@media (min-width: 1000px) {
+  .slogan {
+    font-size: 80px;
+    right: -60%;
+    top: -600px;
+  }
+}
+@media (min-width: 1280px) {
+  .slogan {
+    font-size: 120px;
+    right: -60%;
+  }
 }
