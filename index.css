@@ -24,13 +24,14 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: black;
+  min-width: 640px !important;
 }
 
 .navbar {
   background-color: #333;
   color: #fff;
   position: absolute;
-  border-radius: 0 0 20px 0;
+  border-radius: 0 0 20px 20px;
   width: 58px;
 }
 
@@ -66,6 +67,7 @@ body {
 }
 
 .burger {
+  opacity: 1;
   width: 25px;
   height: 20px;
   display: flex;
@@ -99,17 +101,20 @@ body {
 
 
         .burger div:nth-child(1) {
-            top: 6px;
+            top: 4px;
             transition:1s;
+            height: 3px;
         }
 
         .burger div:nth-child(2) {
-            top: 13px;
+            top: 10.9px;
+            height: 4px;
         }
 
         .burger div:nth-child(3) {
-            top: 20px;
+            top: 19px;
             transition:1s;
+            height: 4px;
         }
 
         .burger.active {
@@ -239,81 +244,60 @@ body {
 
 @keyframes slideIn {
     0% {
-        transform: translateX(-100px);
-        opacity: 0;
+        transform: translateY(-100px);
     }
     100% {
-        transform: translateX(0);
-        opacity: 1;
-        padding: 0;
-        display: block;
+        transform: translateY(0);
+
     }
 }
 
 @keyframes slideOut {
     0% {
-        transform: translateX(0);
-        opacity: 1;
+        transform: translateY(0);
+
     }
     100% {
-        transform: translateX(-100px);
-        opacity: 0;
-        padding: 0 300px 0 0;
-        display: none
+        transform: translateY(-100px);
+
     }
 }
 
+
 @keyframes slideInMenu {
     0% {
-        transform: translateX(-170px);
-        opacity: 0;
+        transform: translateY(-60px);
+
     }
     100% {
-        transform: translateX(0);
-        opacity: 1;
+        transform: translateY(0);
+
     }
 }
 
 @keyframes slideOutMenu {
     0% {
-        transform: translateX(0);
-        opacity: 1;
+        transform: translateY(0);
+
     }
     100% {
-        transform: translateX(-170px);
-        opacity: 0;
-    }
-}
-@keyframes slideInMenuBurger {
-    0% {
-        transform: translateX(-170px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
+        transform: translateY(-60px);
+
     }
 }
 
-@keyframes slideOutMenuBurger {
-    0% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-    100% {
-        transform: translateX(-170px);
-        opacity: 0;
-    }
-}
+
 
 
 .burger {
   width: 25px;
   height: 20px;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   cursor: pointer;
+  background-color: black;
+  position: absolute;
+  top: 21px;
+  left: 18px;
 }
 
 .bar {
@@ -371,24 +355,18 @@ body {
   font-weight: 300;
 }
 
-.closebaton {
-  width: 50px;
-  height: 100%;
-  stroke:#fff;
-  transition:0.3s;
-  position: absolute;
-  left: 23px;
-  top: -2px;
-}
+
 
 .closebatonBurger {
-  width: 50px;
-  height: 100%;
-  stroke:#fff;
-  transition:0.3s;
-  position: absolute;
-  left: 5px;
-  top: -2px;
+  width: 60px;
+  stroke: #000;
+  transition: 0.3s;
+  position: fixed;
+  margin: 60px 0 0 0;
+  background: white;
+  border-radius: 0 0 25px 25px;
+  padding: 10px;
+  animation:;
 }
 
 .menu-menu-closeBurger.inactive {
@@ -398,9 +376,6 @@ body {
   opacity: 0;
 }
 
-.closebaton:hover {
-  stroke: #565656;
-}
 
 /*----------------------------------------------------*/
 /*----------------------------------------------------*/
@@ -421,16 +396,17 @@ body {
 /*----------------------------------------------------*/
 
 .slogan {
-  top: -800px;
-  position: relative;
+  position: absolute;
   width: 300px;
   font-size: 120px;
   text-shadow: 1px 18px 35px #960000;
+  z-index: 100;
+  top: 200px;
+  right: 15%;
 }
 
 .trio_block {
-  position: relative;
-  top: -300px;
+  position: absolute;
 }
 
 
@@ -439,30 +415,81 @@ body {
 }
 
 
-@media (min-width: 0px) {
-  .slogan {
-    font-size: 60px;
-    right: -60%;
-    top: -400px;
-  }
+
+
+
+
+.navbar-brand img {
+            height: 40px;
 }
-@media (min-width: 768px) {
-  .slogan {
-    font-size: 60px;
-    right: -60%;
-    top: -300px;
-  }
+
+.navbar {
+  width: 400px;
 }
-@media (min-width: 1000px) {
-  .slogan {
-    font-size: 80px;
-    right: -60%;
-    top: -600px;
-  }
+
+
+.obert-navbar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: fixed;
 }
-@media (min-width: 1280px) {
-  .slogan {
-    font-size: 120px;
-    right: -60%;
-  }
+.container-fluid {
+  justify-content:center !important;
+}
+
+.navbar-nav.me-auto {
+  font-size: 18px;
+  font-family: 'Roboto Condensed';
+}
+
+
+.close {
+  animation: slideOut 2s;
+  animation-fill-mode:forwards ;
+}
+
+.navbar {
+  background-color: white !important;
+}
+
+.close-menu {
+  animation: slideOutMenu 1s;
+  animation-fill-mode:forwards;
+}
+
+.open {
+  animation: slideInMenu 1.1s;
+  animation-fill-mode:forwards;
+}
+
+
+.open-menu {
+  animation: slideInMenu 1s;
+  animation-fill-mode:forwards;
+}
+
+.open-menu-toggle {
+  animation: slideInMenu 1s;
+  animation-fill-mode:forwards;
+}
+
+.closeSVG {
+  opacity: 1;
+  transition:1s;
+}
+
+.hidden-menu-toggle {
+  opacity: 0 !important;
+}
+
+
+/*hot fix*/
+
+.me-auto.navbar-nav {
+  flex-direction: row !important;
+}
+
+.navbar-nav.me-auto > li {
+  padding: 0 10px 0 0;
 }
