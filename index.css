@@ -24,7 +24,6 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: black;
-  min-width: 640px !important;
 }
 
 .navbar {
@@ -492,4 +491,9 @@ body {
 
 .navbar-nav.me-auto > li {
   padding: 0 10px 0 0;
+}
+
+.mainbackimg_1 {
+  width: 100%;
+  margin: 0 10px 0 0;
 }
