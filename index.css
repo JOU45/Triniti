@@ -6,7 +6,8 @@
 }
 .main_img_1 {
   width: 100%;
-  height: 100%;
+  z-index: -2;
+  position: relative;
 }
 
 .nav_inder_1 {
@@ -399,7 +400,7 @@ body {
   width: 300px;
   font-size: 120px;
   text-shadow: 1px 18px 35px #960000;
-  z-index: 100;
+  z-index: -1;
   top: 200px;
   right: 15%;
 }
@@ -411,6 +412,8 @@ body {
 
 .trio_block > div > img {
   width: 40%;
+  position: relative;
+  z-index: -1;
 }
 
 
@@ -424,6 +427,7 @@ body {
 
 .navbar {
   width: 400px;
+  z-index: 100000000000;
 }
 
 
@@ -495,5 +499,6 @@ body {
 
 .mainbackimg_1 {
   width: 100%;
-  margin: 0 10px 0 0;
+  margin: 0 1px 0 0;
 }
+
