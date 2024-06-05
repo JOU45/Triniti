@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
         nav.classList.toggle('close');
         nav.classList.toggle('open');
         //open-menu
-        closeSVG.classList.toggle('hidden-menu-toggle'); // менюшка закр
-        openSVG.classList.toggle('hidden-menu-toggle'); // менюшка открыв
+        closeSVG.classList.toggle('hidden-menu-toggle');
+        openSVG.classList.toggle('hidden-menu-toggle');
     });
 });

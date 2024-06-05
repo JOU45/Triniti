@@ -6,23 +6,57 @@
     width: 100px;
     margin:0 20px 0 0;
   }
+  .trio_block > div {
+    width: 90% !important;
+  }
+
 }
 
 @media (min-width: 640px) and (max-width: 900px) {
   .slogan {
     font-size: 60px;
     top: 10%;
-    right: 22%;
+    right: 1%;
   }
+  .trio_block > div {
+    width: 90% !important;
+  }
+
 }
 @media (min-width: 900px) and (max-width: 1200px) {
   .slogan {
     font-size: 80px;
   }
+
 }
 
 @media (min-width: 1200px) and (max-width: 1600px) {
   .slogan {
     font-size: 80px;
+  }
+  .trio_block > div {
+    width: 60% !important;
+  }
+}
+
+
+
+
+
+
+
+
+.hidden-under-trio-txt {
+  display: none;
+  margin: 10px;
+}
+
+.hidden-under-trio-txt > p {
+  text-align: center;
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .hidden-under-trio-txt {
+    display: block;
   }
 }
