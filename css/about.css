@@ -1,0 +1,35 @@
+* {
+	font-family: 'Roboto Condensed';
+}
+body {
+	height: auto;
+}
+
+
+.main-container-text {
+	width: 100%;
+	margin: 100px 0 0 0;
+	background-image: url('.\img\img_3.jpg');
+}
+
+.main-container-text > div {
+	padding: 5% 20%;
+}
+
+
+.main-container-text > div > ul > li{
+	font-weight: 400;
+	font-size: 24px;
+	color: #545454;
+}
+
+.main-container-text > div > h1{
+	font-weight: 600;
+	font-size: 30px;
+}
+
+.main-container-text > div > h2{
+	font-weight: 400;
+	font-size: 24px;
+	color: #545454;
+}

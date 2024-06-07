@@ -9,7 +9,9 @@
   .trio_block > div {
     width: 90% !important;
   }
-
+  .main-container-text > div {
+    padding: 5% 10% !important;
+  }
 }
 
 @media (min-width: 640px) and (max-width: 900px) {

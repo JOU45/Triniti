@@ -517,3 +517,8 @@ body {
   z-index: -1;
   position: absolute;
 }
+
+
+.trio_block {
+  width: 100%;
+}
