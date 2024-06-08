@@ -522,3 +522,12 @@ body {
 .trio_block {
   width: 100%;
 }
+
+
+.navbar-nav > li > a > img {
+  width: 30px;
+}
+
+.navbar-nav > span > a > img {
+  width: 30px;
+}

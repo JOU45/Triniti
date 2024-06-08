@@ -24,6 +24,14 @@ footer > .main-container > div > img {
 	margin: 5px;
 }
 
+.footer-cont-2 > a > img {
+	width: 40px;
+	margin: 10px;
+	margin: 5px;
+	border-radius: 15px;
+	transition: 0.3s;
+}
+
 footer > .main-container > div > a {
 	color: black;
 	font-family: 'Roboto Condensed';
@@ -58,14 +66,17 @@ footer > div > div > .icon {
 
 /*hoverr zone*/
 
-footer > div > div > .ds:hover {
+.ds:hover {
 	box-shadow: 5px 5px 15px #3f46ff;
+	border-radius:5px;
 }
 
-footer > div > div > .tg:hover {
+.tg:hover {
 	box-shadow: 5px 5px 15px black;
+	border-radius:5px;
 }
 
-footer > div > div > .gh:hover {
+.gh:hover {
 	box-shadow: 5px 5px 15px #252525;
+	border-radius:5px;
 }
