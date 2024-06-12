@@ -12,6 +12,25 @@
   .main-container-text > div {
     padding: 5% 10% !important;
   }
+  .order_main > div {
+    width: 75%;
+    margin: auto !important;
+  }
+  .order_main {
+    flex-direction: column;
+  }
+
+
+  .order_main > div {
+    width: 75%;
+  }
+
+  .order_info > h5 {
+    font-size: 2.7vh !important;
+  }
+  .order_info > h6, .order_info > ul {
+    font-size: 2vh;
+  } 
 }
 
 @media (min-width: 640px) and (max-width: 900px) {
@@ -21,7 +40,23 @@
     right: 1%;
   }
   .trio_block > div {
-    width: 90% !important;
+    width: 90 !important;
+  }
+  .order_main {
+    flex-direction: column;
+  }
+
+
+
+  .order_main > div {
+    width: 75%;
+  }
+
+  .order_info > h5 {
+    font-size: 2.7vh !important;
+  }
+  .order_info > h6, .order_info > ul {
+    font-size: 2vh;
   }
 
 }
@@ -29,6 +64,25 @@
   .slogan {
     font-size: 80px;
   }
+  
+
+
+  .order_main > div {
+    width: 75%;
+  }
+
+  .order_info > h5 {
+    font-size: 2.7vh !important;
+  }
+  .order_info > h6, .order_info > ul {
+    font-size: 2vh;
+  }
+  .order_main {
+    flex-direction: column;
+  }
+
+
+
 
 }
 
@@ -39,8 +93,24 @@
   .trio_block > div {
     width: 60% !important;
   }
+
+  .order_main > div {
+    width: 42%;
+  }
+  .order_info > h5 {
+    line-height: 1 !important;
+  }
 }
 
+
+@media (min-width: 1600px) {
+  .order_main > div {
+    width: 33%;
+  }
+  .order_info > h5 {
+    line-height: 1.2 !important;
+  }
+}
 
 
 
@@ -50,7 +120,8 @@
 
 .hidden-under-trio-txt {
   display: none;
-  margin: 10px;
+  margin: 30px;
+  text-align: center;
 }
 
 .hidden-under-trio-txt > p {
@@ -62,3 +133,9 @@
     display: block;
   }
 }
+
+
+
+
+
+

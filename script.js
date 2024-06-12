@@ -13,4 +13,14 @@ document.addEventListener('DOMContentLoaded', function() {
         closeSVG.classList.toggle('hidden-menu-toggle');
         openSVG.classList.toggle('hidden-menu-toggle');
     });
+
+
+
+});
+
+
+
+    window.addEventListener('load', function () {
+    const loader = document.querySelector('.loader');
+    loader.classList.add('anim_load_close');
 });

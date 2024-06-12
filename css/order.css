@@ -1,0 +1,75 @@
+
+.order_main {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.order_main > div {
+  margin:auto;
+}
+
+.order_info {
+  color: white;
+  margin: auto;
+}
+
+.order_info > h5 {
+  font-size: 20px;
+}
+
+
+.order_info > p {
+  font-size: 14px;
+  margin: 0;
+}
+
+
+.order_info > div > button {
+  width: 120px;
+  height: 40px;
+  background: #fff;
+  font-family: 'Roboto Condensed';
+  font-size: 20px;
+  transition: 0.3s;
+} 
+
+.order_info > div > button:hover {
+  background-color: #fcac45;
+}
+
+.order_info > h5 , .order_info > p {
+  line-height: 2;
+}
+
+.order_info > h5 {
+    text-align: center;
+}
+
+.order_info > div {
+  width: 100%;
+  text-align: center;
+}
+
+.order_info.den {
+  overflow-x: auto;
+  height: 700px;
+}
+
+.scrollable-container::-webkit-scrollbar {
+    width: 6px; 
+}
+
+.scrollable-container::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 20px; 
+}
+
+.scrollable-container::-webkit-scrollbar-thumb {
+    background: #fcac45; 
+    border-radius: 20px; 
+}
+
+.scrollable-container::-webkit-scrollbar-thumb:hover {
+    background: #ffb865; 
+}
