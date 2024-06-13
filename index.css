@@ -14,6 +14,13 @@
   margin: 0px;
 }
 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
 h1 {
   color: white;
   font-family: 'Roboto Condensed';
@@ -28,6 +35,7 @@ body {
   position: absolute;
   width: 100%;
   height: auto;
+  caret-color: transparent;
 }
 
 body::-webkit-scrollbar {

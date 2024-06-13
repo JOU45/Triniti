@@ -13,14 +13,37 @@ document.addEventListener('DOMContentLoaded', function() {
         closeSVG.classList.toggle('hidden-menu-toggle');
         openSVG.classList.toggle('hidden-menu-toggle');
     });
-
-
-
 });
-
-
 
     window.addEventListener('load', function () {
     const loader = document.querySelector('.loader');
     loader.classList.add('anim_load_close');
+});
+
+document.querySelector('.date-card').addEventListener('input', function(e) {
+    let input = e.target.value.replace(/\D/g, '');
+    if (input.length <= 2) {
+        e.target.value = input;
+    } else if (input.length <= 4) {
+        e.target.value = input.slice(0, 2) + '/' + input.slice(2);
+    } else {
+        e.target.value = input.slice(0, 2) + '/' + input.slice(2, 4);
+    }
+});
+
+document.getElementById('cardNumber').addEventListener('input', function (e) {
+    var target = e.target;
+    var position = target.selectionEnd; // сохраняем позицию курсора
+    var input = target.value.replace(/\D/g, '').substring(0, 16); // убираем все не цифры
+    var numberFormatted = input.replace(/(\d{4})(?=\d)/g, '$1 '); // ставим пробелы после каждых 4 цифр
+    target.value = numberFormatted.trim(); // убираем пробелы в конце
+    target.setSelectionRange(position, position); // возвращаем позицию курсора
+});
+
+document.querySelector('.number-card-cvv').addEventListener('input', function(e) {
+    let input = e.target.value.replace(/\D/g, ''); 
+    if (input.length >= 3) {
+        input = input.slice(0, 3);
+    }
+    e.target.value = input;
 });
