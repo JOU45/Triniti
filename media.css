@@ -21,6 +21,9 @@
     height: 100% !important;
   }
 
+  .info {
+    width: 70% !important;
+  }
 
   .order_main > div {
     width: 75%;
@@ -39,6 +42,9 @@
     font-size: 60px;
     top: 10%;
     right: 1%;
+  }
+  .info {
+    width: 70% !important;
   }
   .trio_block > div {
     width: 90 !important;
@@ -66,6 +72,11 @@
   .slogan {
     font-size: 80px;
   }
+
+  .info {
+    width: 70% !important;
+  }
+
   
 
 

@@ -3,6 +3,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const nav = document.querySelector('.navbar'); // менюшка мейн
     const openSVG = document.querySelector('.burger'); // toggle(open)
     const closeSVG = document.querySelector('.closeSVG'); // toggle(close)
+    const open_pay = document.querySelector('.paypay');
+    const open_after_pay = document.querySelector('.after-pay');
+    const pay = document.querySelector('.pay');
+    const info = document.querySelector('.info');
+    const submit_card_pay = document.querySelector('.submit_card_pay');
 
     close.addEventListener('click', function() {
         close.classList.toggle('close-menu');
@@ -12,6 +17,18 @@ document.addEventListener('DOMContentLoaded', function() {
         //open-menu
         closeSVG.classList.toggle('hidden-menu-toggle');
         openSVG.classList.toggle('hidden-menu-toggle');
+    });
+
+    open_pay.addEventListener('click', function(){
+        pay.classList.add('pay_confirm');
+        info.classList.add('pay_truns');
+
+    });
+
+    submit_card_pay.addEventListener('click', function(){
+        pay.classList.add('pay_truns');
+        open_after_pay.classList.add('pay_confirm');
+
     });
 });
 
