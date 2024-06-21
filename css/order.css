@@ -73,7 +73,7 @@
 }
 
 .scrollable-container::-webkit-scrollbar {
-    width: 6px; 
+    width: 2px;
 }
 
 .scrollable-container::-webkit-scrollbar-track {

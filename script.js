@@ -50,11 +50,11 @@ document.querySelector('.date-card').addEventListener('input', function(e) {
 
 document.getElementById('cardNumber').addEventListener('input', function (e) {
     var target = e.target;
-    var position = target.selectionEnd; // сохраняем позицию курсора
+    var position = target.selectionEnd;
     var input = target.value.replace(/\D/g, '').substring(0, 16); // убираем все не цифры
     var numberFormatted = input.replace(/(\d{4})(?=\d)/g, '$1 '); // ставим пробелы после каждых 4 цифр
-    target.value = numberFormatted.trim(); // убираем пробелы в конце
-    target.setSelectionRange(position, position); // возвращаем позицию курсора
+    target.value = numberFormatted.trim();
+    target.setSelectionRange(position, position);
 });
 
 document.querySelector('.number-card-cvv').addEventListener('input', function(e) {

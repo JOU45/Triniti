@@ -6,7 +6,7 @@
     width: 100px;
     margin:0 20px 0 0;
   }
-  .trio_block > div {
+  .trio_block > .trio_div {
     width: 90% !important;
   }
   .main-container-text > div {
@@ -22,11 +22,11 @@
   }
 
   .info {
-    width: 70% !important;
+    width: 90% !important;
   }
 
   .order_main > div {
-    width: 75%;
+    width: 90%;
   }
 
   .order_info > h5 {
@@ -34,7 +34,14 @@
   }
   .order_info > h6, .order_info > ul {
     font-size: 2vh;
-  } 
+  }
+  .article >  div > p {
+    position: absolute;
+    top: 92%;
+    left: 4%;
+    font-size: 20px;
+    width: 200px;
+  }
 }
 
 @media (min-width: 640px) and (max-width: 900px) {
@@ -46,8 +53,8 @@
   .info {
     width: 70% !important;
   }
-  .trio_block > div {
-    width: 90 !important;
+  .trio_block > .trio_div {
+    width: 90% !important;
   }
   .order_main {
     flex-direction: column;
@@ -65,6 +72,13 @@
   }
   .order_info > h6, .order_info > ul {
     font-size: 2vh;
+  }
+  .article >  div > p {
+    position: absolute;
+    top: 90%;
+    left: 4%;
+    font-size: 28px;
+    width: 300px;
   }
 
 }
@@ -94,6 +108,13 @@
     flex-direction: column;
     height: 100% !important;
   }
+  .article >  div > p {
+    position: absolute;
+    top: 82%;
+    left: 4%;
+    font-size: 30px !important;
+    width: 300px;
+  }
 
 
 
@@ -113,6 +134,15 @@
   }
   .order_info > h5 {
     line-height: 1 !important;
+  }
+  .article{
+    display: table-footer-group;
+  }
+  .article >  div > p {
+    position: absolute;
+    top: 88%;
+    left: 10%;
+    width: 400px;
   }
 }
 

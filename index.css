@@ -36,6 +36,7 @@ body {
   width: 100%;
   height: auto;
   caret-color: transparent;
+    overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -461,6 +462,7 @@ body::-webkit-scrollbar-thumb:hover {
   justify-content: center;
   width: 100%;
   position: fixed;
+    z-index: 1;
 }
 .container-fluid {
   justify-content:center !important;
@@ -642,3 +644,16 @@ body::-webkit-scrollbar-thumb:hover {
         transform: rotate(360deg);
     }
 }
+
+
+.article {
+    margin: 50px 0;
+}
+
+.article > div {
+    width: 100%;
+    z-index: -1;
+}
+
+.article > div > img {width: 100%;position: relative;z-index: -1}
+.article > div > p {position: absolute;top: 84%;left: 200px;font-size: 38px;width: 500px;color: white;text-shadow: 3px 5px 7px black;}
